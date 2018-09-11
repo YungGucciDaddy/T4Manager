@@ -61,6 +61,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+   /* border-bottom: 1px solid white; */
 }
 
 .hvr-underline-from-center {
@@ -146,12 +147,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: sepia(40%);
+    filter: grayscale(40%);
 }
 
 #calendar ul.weekdays {
     height: 40px;
-    
 }
 
 #calendar ul.weekdays li {
@@ -162,13 +162,10 @@ body {
 	text-shadow: 2px 2px #FF542F;
     color: #fff;
     font-size: 13px;
-
-    
 }
 
 #calendar .days li {
     height: 180px;
-
 }
 
 #calendar .days li:hover {
@@ -185,6 +182,7 @@ body {
     width: 30px;
     border-radius: 50%;
     float: right;
+    opacity:0.75;
 }
 
 
@@ -209,9 +207,7 @@ body {
     text-decoration: none;  
 }
 
-
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .header a {
     float: none;
     display: block;
@@ -262,3 +258,4 @@ body {
     }
 
 }
+ 
