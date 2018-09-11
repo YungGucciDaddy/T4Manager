@@ -13,7 +13,7 @@ section {
     background-image: url("img_parallax3.jpg");
     height: 100%;
 
-    /* Skapar parallax-scrolling, fäster bakgrund */
+    /* Skapar parallax-scrolling, fäster bakgrund SAYDOYOUREMEMBER*/
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
