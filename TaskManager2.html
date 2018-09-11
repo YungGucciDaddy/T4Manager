@@ -1,0 +1,251 @@
+<html>
+   <head>
+<link rel="stylesheet" type="text/css" href="taskstyle.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
+<title>T4-Manager</title>
+
+<?PHP
+//Ansluter till databas
+ $db = mysqli_connect('localhost','username','password','database_name')
+ or die('Det gick inte att ansluta till MySQL-server.');
+?>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // "Smooth" scrolling till alla länkar
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+
+      event.preventDefault();
+
+      // Lagrar hash
+      var hash = this.hash;
+
+      // Här används jQuerys animate() metod för att lägga till smooth page scroll
+      // "800" används i det här fallet för att bestämma antalet millisekunder för att scrolla ner till destinationen 
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Lägger till en hashtag i länken (#) efter destinationen har nåtts (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+   <body>
+    <div class="header">
+            <a href="TaskManager2.html"><img src="TE4-logo.png" height="102" width="160" /></a>
+            <!- Regionlock på H-205, W-320>
+ 
+	<div class="header-right">
+    <a href="#section2" class="hvr-underline-from-center">Hem</a>
+    <a href="#section3" class="hvr-underline-from-center">Kalender</a>
+    <a href="Login.html" class="hvr-underline-from-center">Mitt Konto</a>
+  </div>
+</div>
+
+<div class="main" id="section2">
+<section>
+<div class="box">
+<h1>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+laboris nisi ut aliquip ex ea commodo consequat.
+</h1>
+</div>
+</section>
+</div>
+
+<div class="main" id="section3">
+<section>
+<div id="calendar-wrap">
+
+            <div id="calendar">
+
+<ul class="weekdays">            
+                    <li><b>Måndag</li>
+                    <li>Tisdag</li>
+                    <li>Onsdag</li>
+                    <li>Torsdag</li>
+                    <li>Fredag</li>
+                    <li>Lördag</li>
+					<li>Söndag</b></li>
+                </ul>
+
+                <ul class="days">
+             
+                    <li class="day">
+                        <div class="date">27</div>                       
+                    </li>
+                    <li class="day">
+                        <div class="date">28</div>
+                        <div class="event">
+                            <div class="event-desc">
+                                <a href="#section3"><b>Testeli test i testttt testt i test</b></a>
+                            </div>
+                            <div class="event-time">
+                               <b>14:00 - 17:00</b>
+                            </div>
+                        </div>                      
+                    </li>
+                </ul>
+
+                <ul class="days">
+                    <li class="day">
+                        <div class="date">29</div>       
+                        <a href                
+                    </li>
+                    <li class="day">
+                        <div class="date">30</div>                       
+                    </li>
+                    <li class="day">
+                        <div class="date">31</div>                       
+                    </li>
+                    <li class="day">
+                        <div class="date">1</div>                       
+                    </li>
+                    <li class="day">
+                        <div class="date">2</div>
+                        <div class="event">
+                            <div class="event-desc">
+                                <b>Tessssssst projekt</b>
+                            </div>
+                            <div class="event-time">
+                              <b>18:00 - 20:30</b>
+                            </div>
+                        </div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">3</div>                       
+                    </li>
+                    <li class="day">
+                        <div class="date">4</div>                       
+                    </li>
+                </ul>
+
+                <ul class="days">
+                    <li class="day">
+                        <div class="date">5</div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">6</div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">7</div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">8</div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">9</div><div class="event">
+                            <div class="event-desc">
+                                <b>Morgonmöte!!!</b>
+                            </div>
+                            <div class="event-time">
+                              <b>13:00 - 15:00</b>
+                            </div>
+                        </div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">10</div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">11</div>                      
+                    </li>
+                </ul>
+
+                <ul class="days">
+                    <li class="day">
+                        <div class="date">12</div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">13</div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">14</div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">15</div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">16</div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">17</div>
+                        <div class="event">
+                            <div class="event-desc">
+                              <b>  Samtal osv</b>
+                            </div>
+                            <div class="event-time">
+                              <b>09:00 - 12:00</b>
+                            </div>
+                        </div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">18</div>                      
+                    </li>
+                </ul>
+
+                <ul class="days">
+                    <li class="day">
+                        <div class="date">19</div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">20</div>
+                        <div class="event">
+                            <div class="event-desc">
+                               <b>Samtal osv</b>
+                            </div>
+                            <div class="event-time">
+                             <b>13:00 - 15:00</b>
+                            </div>
+                        </div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">21</div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">22</div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">23</div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">24</div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">25</div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">26</div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">27</div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">28</div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">29</div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">30</div>                      
+                    </li>
+</ul>
+                </ul>
+
+               
+            </div>
+        </div>
+</section>
+</div>
+
+   </body>
+   </head> 
+</html>
