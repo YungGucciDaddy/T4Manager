@@ -143,12 +143,12 @@ body {
     border: 1px solid rgba(204, 204, 204, 0.555);
     margin-right: -1px;
     margin-bottom: -1px;
-	background-image: url("img_parallax.jpg");
+	background-image: url("img_parallax2.jpg");
 	background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: grayscale(40%);
+  
 }
 
 #calendar ul.weekdays {
@@ -259,4 +259,3 @@ body {
     }
 
 }
- 
