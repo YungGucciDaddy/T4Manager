@@ -17,6 +17,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
 }
+body { margin: 0; padding: 0; }
 
 .logo {
     background-image: url("TE4-logo.png");
@@ -145,11 +146,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: sepia(40%);
 }
 
 #calendar ul.weekdays {
     height: 40px;
-    background: #8e352e;
+    
 }
 
 #calendar ul.weekdays li {
@@ -160,6 +162,8 @@ body {
 	text-shadow: 2px 2px #FF542F;
     color: #fff;
     font-size: 13px;
+
+    
 }
 
 #calendar .days li {
@@ -211,7 +215,7 @@ body {
   .header a {
     float: none;
     display: block;
-    text-align: left;
+    text-align: center;
   }
 
   .header-right {
