@@ -115,7 +115,7 @@ body {
 }
 
 .header-right {
-	float: right;
+    float: right;
 }
 
 #calendar {
@@ -148,7 +148,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  
 }
 
 #calendar ul.weekdays {
@@ -218,8 +217,7 @@ body {
     float: none;
   }
 
-  h1
-  {
+  h1 {
     font-size: 90%;
   }
 
