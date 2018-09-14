@@ -206,7 +206,7 @@ body {
     text-decoration: none;  
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .header a {
     float: none;
     display: block;
@@ -225,8 +225,6 @@ body {
     min-height: 100%;
     background-image: url("img_parallax.jpg");
     height: 100%;
-
-    /* Skapar parallax-scrolling, fäster bakgrund */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
