@@ -1,0 +1,8 @@
+/media/namn/windows/xampp/htdocs
+
+Alias "/mapp" "C:/Users/stefan.folkesson/Dropbox/testmapp"
+<Directory "C:/Users/stefan.folkesson/Dropbox/testmapp/">
+	Options Indexes FollowSymLinks Includes ExecCGI
+	AllowOverride All
+	Require all granted
+</Directory>
